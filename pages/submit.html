@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit a Ticket | Nova Tech Service Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styling.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="mark">N</span> Nova Tech Service Portal</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">Menu</button>
+    <nav class="main-nav" id="mainNav">
+      <li><a href="../index_2.html">Home</a></li>
+      <li class="current"><a href="ticket.html" class="active">Submit a Ticket</a></li>
+      <li><a href="../pages/Knowledge.html">Knowledge Base</a></li>
+      <li><a href="team.html">Team</a></li>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="padding-top:44px;">
+    <div class="container">
+      <h2 class="section-title">Submit a support ticket</h2>
+      <p class="section-sub">Describe your issue in as much detail as you can — the more we know upfront, the faster Level 1 can diagnose it. You'll receive a ticket reference and an email acknowledgement once it's logged.</p>
+
+      <div class="grid-2" style="align-items:flex-start;">
+        <form class="ticket-form" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Full name <span class="req">*</span></label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row two">
+            <div class="form-row">
+              <label for="email">Email address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="department">Department</label>
+              <input type="text" id="department" name="department">
+            </div>
+          </div>
+          <div class="form-row two">
+            <div class="form-row">
+              <label for="category">Request category <span class="req">*</span></label>
+              <select id="category" name="category" required>
+                <option value="">Select category</option>
+                <option>Network</option>
+                <option>Hardware</option>
+                <option>Software</option>
+                <option>Access</option>
+                <option>Printing</option>
+                <option>Email</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="priority">Priority</label>
+              <select id="priority" name="priority">
+                <option>Low</option>
+                <option selected>Medium</option>
+                <option>High</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="asset">Affected device or service</label>
+            <input type="text" id="asset" name="asset" placeholder="e.g. AST-004, office printer, VPN">
+          </div>
+          <div class="form-row">
+            <label for="description">Description of the issue <span class="req">*</span></label>
+            <textarea id="description" name="description" required placeholder="What's not working, when it started, and any error messages you've seen."></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary">Log ticket</button>
+            <p class="hint" style="margin-top:10px;">This form is a template for a live Google Form / Microsoft Form embed — replace the action attribute with your group's real form endpoint.</p>
+          </div>
+        </form>
+
+        <div>
+          <div class="card" style="margin-bottom:20px;">
+            <h3>What happens next</h3>
+            <p>Your request is logged with a unique Incident ID, categorised and prioritised, then assigned to a Level 1 technician. If it can't be resolved at Level 1, it's escalated with the diagnostic evidence already attached — you don't have to repeat yourself.</p>
+          </div>
+          <div class="card">
+            <h3 class="mt-0">Expected response times</h3>
+            <table>
+              <thead>
+                <tr><th>Priority</th><th>Example</th><th>Response</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><span class="badge high">High</span></td><td>Major outage or critical function unavailable</td><td>Immediate — rapid escalation if unresolved</td></tr>
+                <tr><td><span class="badge medium">Medium</span></td><td>Important application unavailable to one user</td><td>Normal queue, same business day</td></tr>
+                <tr><td><span class="badge low">Low</span></td><td>Minor request or non-urgent assistance</td><td>Normal queue</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <strong style="color:#fff;">Nova Tech Solutions (Pty) Ltd</strong>
+      <div>Internal IT Service Portal — simulated environment for XHIS5122</div>
+    </div>
+    <div>
+      <div>Service Desk: servicedesk@novatech.local</div>
+      <div>Internal ext. 2200</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../css/script.js"></script>
+<!-- Quick Help chatbot widget -->
+<button id="qhLauncher" class="qh-launcher" aria-label="Open Quick Help" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+  </svg>
+</button>
+<div id="qhPanel" class="qh-panel" role="dialog" aria-label="Quick Help chat">
+  <div class="qh-header">
+    <div>
+      <div class="qh-title">Quick Help</div>
+      <div class="qh-sub">Nova Tech Service Desk</div>
+    </div>
+    <button id="qhClose" class="qh-close" aria-label="Close Quick Help">&times;</button>
+  </div>
+  <div id="qhMessages" class="qh-messages"></div>
+  <div class="qh-quick-replies">
+    <button type="button" class="qh-chip">Wi-Fi issue</button>
+    <button type="button" class="qh-chip">Printer issue</button>
+    <button type="button" class="qh-chip">Login issue</button>
+    <button type="button" class="qh-chip">Response times</button>
+  </div>
+  <div class="qh-input-row">
+    <input id="qhInput" type="text" placeholder="Type your question...">
+    <button id="qhSend" type="button" class="qh-send">Send</button>
+  </div>
+</div>
+<script src="../css/chatbot.js"></script>
+</body>
+</html>

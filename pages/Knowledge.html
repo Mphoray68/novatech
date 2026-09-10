@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knowledge Base | Nova Tech Service Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styling.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="mark">N</span> Nova Tech Service Portal</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">Menu</button>
+    <nav class="main-nav" id="mainNav">
+      <li><a href="../index_2.html">Home</a></li>
+      <li><a href="../pages/submit.html">Submit a Ticket</a></li>
+      <li class="current"><a href="knowledge-base.html" class="active">Knowledge Base</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="padding-top:44px;">
+    <div class="container">
+      <h2 class="section-title">Knowledge base</h2>
+      <p class="section-sub">Quick answers to the issues we see most, plus the documents you need for escalations and change requests.</p>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Why is my Wi-Fi not working?</h3>
+          <p>Restart the device's Wi-Fi adapter, confirm you're on the correct SSID, and check whether other users on the same floor are affected — that points to a network-wide fault rather than a device issue.</p>
+        </div>
+        <div class="card">
+          <h3>My printer won't print</h3>
+          <p>Check the printer has paper/toner and is powered on, then remove and re-add it in your device's printer settings. If the queue is stuck, restarting the print spooler usually clears it.</p>
+        </div>
+        <div class="card">
+          <h3>I can't log in / access a system</h3>
+          <p>Confirm your username and that Caps Lock is off. If your account is locked, log an Access ticket — Level 1 can reset most standard accounts within the same business day.</p>
+        </div>
+        <div class="card">
+          <h3>My laptop is running slowly</h3>
+          <p>Restart the device first — this clears most temporary performance issues. If it persists after a restart, log a Hardware ticket with the approximate time it started.</p>
+        </div>
+        <div class="card">
+          <h3>I'm not receiving emails</h3>
+          <p>Check your internet connection and mailbox storage first. If the issue affects your whole department, it's likely a mail server fault — log it as High priority.</p>
+        </div>
+        <div class="card">
+          <h3>How do I request a new asset?</h3>
+          <p>New hardware or software requests go through the Change Request Form below, not the standard ticket form — they need manager approval before implementation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <h2 class="section-title">Escalation policy</h2>
+      <p class="section-sub">A ticket moves up a level when it can't be safely resolved at the current one.</p>
+      <div class="card" style="margin-bottom:24px;">
+        <p class="mt-0">Escalate when the issue: cannot be safely resolved at the current level; requires specialist access; affects multiple users; involves infrastructure or vendor support; or has high business impact.</p>
+        <p style="margin-bottom:0;"><strong>Flow:</strong> User → Ticket Logging → Level 1 Diagnosis → Resolved? Yes: Close · No: Level 2 → Resolved? Yes: Close · No: Level 3 / Specialist.</p>
+      </div>
+
+      <h2 class="section-title">How tickets relate to network infrastructure</h2>
+      <p class="section-sub">Most Network-category tickets trace back to one of three layers, which is why the affected asset field matters so much when you log a ticket.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Routers</h3>
+          <p>Handle traffic between Nova Tech's internal network and the internet. A router fault usually shows up as a site-wide outage rather than a single user's issue.</p>
+        </div>
+        <div class="card">
+          <h3>Switches</h3>
+          <p>Connect devices within a floor or department. A faulty switch typically affects everyone plugged into it, which is why "one user or multiple?" is the first diagnostic question.</p>
+        </div>
+        <div class="card">
+          <h3>LANs</h3>
+          <p>The local network segment a department sits on. Recording the affected asset and department lets the technician see whether a problem is isolated or spreading across the LAN.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Downloadable forms</h2>
+      <p class="section-sub">Use the Change Request Form for any planned change — new hardware, software installs, access changes, or infrastructure work — that needs approval before it happens.</p>
+      <div class="card" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+        <div>
+          <h3 class="mt-0" style="margin-bottom:2px;">Change Request Form</h3>
+          <p>Captures the requested change, reason, impact, risk, implementation plan, rollback plan and approval sign-off.</p>
+        </div>
+        <a href="#" class="btn btn-primary">Download form</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <strong style="color:#fff;">Nova Tech Solutions (Pty) Ltd</strong>
+      <div>Internal IT Service Portal — simulated environment for XHIS5122</div>
+    </div>
+    <div>
+      <div>Service Desk: servicedesk@novatech.local</div>
+      <div>Internal ext. 2200</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../css/script.js"></script>
+<!-- Quick Help chatbot widget -->
+<button id="qhLauncher" class="qh-launcher" aria-label="Open Quick Help" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+  </svg>
+</button>
+<div id="qhPanel" class="qh-panel" role="dialog" aria-label="Quick Help chat">
+  <div class="qh-header">
+    <div>
+      <div class="qh-title">Quick Help</div>
+      <div class="qh-sub">Nova Tech Service Desk</div>
+    </div>
+    <button id="qhClose" class="qh-close" aria-label="Close Quick Help">&times;</button>
+  </div>
+  <div id="qhMessages" class="qh-messages"></div>
+  <div class="qh-quick-replies">
+    <button type="button" class="qh-chip">Wi-Fi issue</button>
+    <button type="button" class="qh-chip">Printer issue</button>
+    <button type="button" class="qh-chip">Login issue</button>
+    <button type="button" class="qh-chip">Response times</button>
+  </div>
+  <div class="qh-input-row">
+    <input id="qhInput" type="text" placeholder="Type your question...">
+    <button id="qhSend" type="button" class="qh-send">Send</button>
+  </div>
+</div>
+<script src="../css/chatbot.js"></script>
+</body>
+</html>

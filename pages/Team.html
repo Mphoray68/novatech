@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team | Nova Tech Service Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styling.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="mark">N</span> Nova Tech Service Portal</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">Menu</button>
+    <nav class="main-nav" id="mainNav">
+      <li><a href="../index_2.html">Home</a></li>
+      <li><a href="../pages/submit.html">Submit a Ticket</a></li>
+      <li><a href="../pages/Knowledge.html">Knowledge Base</a></li>
+      <li class="current"><a href="team.html" class="active">Team</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="padding-top:44px;">
+    <div class="container">
+      <h2 class="section-title">Meet the team</h2>
+      <p class="section-sub">Tech Headquarters — the group behind Nova Tech's simulated service desk for XHIS5122.</p>
+
+      <div class="grid-2">
+        <div class="team-card">
+          <div class="avatar">RM</div>
+          <div>
+            <h3>Mudau Ronewa</h3>
+            <div class="role">Project Leader</div>
+            <div class="meta">Coordinates the project, monitors progress, liaises with the lecturer and integrates the final outputs.</div>
+            <div class="meta">r.mudau@novatech.local (simulated)</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="avatar">TM</div>
+          <div>
+            <h3>Musundwa Thendo</h3>
+            <div class="role">Service Desk Analyst</div>
+            <div class="meta">Defines ticket categories, priority rules and the first-line support workflow.</div>
+            <div class="meta">t.musundwa@novatech.local (simulated)</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="avatar">PL</div>
+          <div>
+            <h3>Pheaga Lebea</h3>
+            <div class="role">Documentation Lead</div>
+            <div class="meta">Prepares the SOP, communication templates and overall document structure.</div>
+            <div class="meta">p.lebea@novatech.local (simulated)</div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="avatar">UN</div>
+          <div>
+            <h3>Uafulufhedzea Nthangeni</h3>
+            <div class="role">Developer / Technical Lead</div>
+            <div class="meta">Maintains asset information, builds the dashboard requirements and documents the innovation feature.</div>
+            <div class="meta">u.nthangeni@novatech.local (simulated)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <h2 class="section-title">Supervision</h2>
+      <div class="team-card" style="max-width:520px;">
+        <div class="avatar">LM</div>
+        <div>
+          <h3>Mr L. Mokoena</h3>
+          <div class="role">Lecturer / NovaTech Manager (Supervisor)</div>
+          <div class="meta">Oversees the simulated WIL partnership and signs off project milestones.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <strong style="color:#fff;">Nova Tech Solutions (Pty) Ltd</strong>
+      <div>Internal IT Service Portal — simulated environment for XHIS5122</div>
+    </div>
+    <div>
+      <div>Service Desk: servicedesk@novatech.local</div>
+      <div>Internal ext. 2200</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../css/script.js"></script>
+<!-- Quick Help chatbot widget -->
+<button id="qhLauncher" class="qh-launcher" aria-label="Open Quick Help" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+  </svg>
+</button>
+<div id="qhPanel" class="qh-panel" role="dialog" aria-label="Quick Help chat">
+  <div class="qh-header">
+    <div>
+      <div class="qh-title">Quick Help</div>
+      <div class="qh-sub">Nova Tech Service Desk</div>
+    </div>
+    <button id="qhClose" class="qh-close" aria-label="Close Quick Help">&times;</button>
+  </div>
+  <div id="qhMessages" class="qh-messages"></div>
+  <div class="qh-quick-replies">
+    <button type="button" class="qh-chip">Wi-Fi issue</button>
+    <button type="button" class="qh-chip">Printer issue</button>
+    <button type="button" class="qh-chip">Login issue</button>
+    <button type="button" class="qh-chip">Response times</button>
+  </div>
+  <div class="qh-input-row">
+    <input id="qhInput" type="text" placeholder="Type your question...">
+    <button id="qhSend" type="button" class="qh-send">Send</button>
+  </div>
+</div>
+<script src="../css/chatbot.js"></script>
+</body>
+</html>
